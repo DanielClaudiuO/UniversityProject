@@ -1,0 +1,47 @@
+<h1 id="tableLabel">Add Teacher</h1>
+<table class="example-full-width" cellspacing="0">
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label>Teacher's First Name</mat-label>
+        <input matInput [(ngModel)]="teacher.firstName" />
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput [(ngModel)]="teacher.lastName" />
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label>Course</mat-label>
+        <input matInput [(ngModel)]="teacher.course" />
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput [(ngModel)]="teacher.email" />
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label>yearsActive</mat-label>
+        <input matInput [(ngModel)]="teacher.yearsActive" />
+      </mat-form-field>
+    </td>
+  </tr>
+</table>
+
+<div class="example-button-row">
+  <button mat-raised-button color="accent" (click)="saveTeacher()">Save Teacher</button>
+</div>
