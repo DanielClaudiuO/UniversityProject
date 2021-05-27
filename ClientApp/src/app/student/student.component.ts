@@ -13,7 +13,7 @@ import { StudentService } from './student.service';
 })
 export class StudentComponent {
 
-  displayedColumns: string[] = ['id', 'firstName', 'lastName', 'age', 'average', 'faculty', 'actions'];
+  displayedColumns: string[] = ['firstName', 'lastName', 'age', 'average', 'faculty', 'actions'];
   dataSource: MatTableDataSource<Student>;
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
